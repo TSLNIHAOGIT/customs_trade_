@@ -57,6 +57,7 @@ model_bst = xgb.train(params, d_train, 30, watchlist, early_stopping_rounds=500,
 # print("XGBoost_sklearn接口进行训练：")
 # model_sklearn = clf.fit(X_train, y_train)
 
+print('importances')
 y_bst = model_bst.predict(d_test)
 # y_sklearn = clf.predict_proba(X_test)[:, 1]
 
